@@ -56,7 +56,7 @@ export class News extends Component {
       loading: false,
       page:null,
       totalResults:null,
-      length: 12
+      
     };
   }
   async componentDidMount(){
@@ -106,7 +106,7 @@ export class News extends Component {
    
     this.setState({
       articles : this.state.articles.concat(parseData.articles),
-      length :12,
+      
       page : this.state.page +1
     }) 
 
