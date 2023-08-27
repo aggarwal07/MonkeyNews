@@ -118,9 +118,9 @@ export class News extends Component {
         <h1 className="text-center">MonkeyNews - Top Headlines Of The Day</h1>
         
           <InfiniteScroll
-            dataLength={this.state.articles.length}
+            dataLength={this.articles.length}
             next={this.fetchMoreData}
-            hasMore={this.state.articles.length!==this.state.totalResults}
+            hasMore={this.articles.length!==this.state.totalResults}
             loader={<Load />}
           >
             <div className="container">
